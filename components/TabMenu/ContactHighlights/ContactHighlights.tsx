@@ -72,7 +72,7 @@ export default function ContactHighlights() {
 
   return (
     <div>
-      <Title order={2} mb="md">
+      <Title order={2} mb="lg" mt="lg">
         Contact Highlights
       </Title>
       <Grid gutter="md">
