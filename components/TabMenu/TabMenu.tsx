@@ -1,7 +1,7 @@
 'use client';
 
 import { Tabs } from '@mantine/core';
-import ContentHighlights from './ContactHighlights/ContactHighlights';
+import ContactHighlights from './ContactHighlights/ContactHighlights';
 import LatestUpdates from './LatestUpdates/LatestUpdates';
 import Metrics from './Metrics/Metrics';
 import ResearchNotes from './ResearchNotes/ResearchNotes';
@@ -45,7 +45,7 @@ export default function TabMenu() {
       </Tabs.Panel>
 
       <Tabs.Panel value="content-highlights">
-        <ContentHighlights />
+        <ContactHighlights />
       </Tabs.Panel>
 
       <Tabs.Panel value="research-notes">
