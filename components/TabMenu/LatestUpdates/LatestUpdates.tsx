@@ -44,7 +44,7 @@ export default function LatestUpdates() {
       </Title>
       <Grid gutter="md" mb="md" mt="lg">
         {latestDocuments.map((data, index) => (
-          <Grid.Col key={index} span={4}>
+          <Grid.Col key={index} span={{ base: 12, sm: 6, lg: 4 }}>
             <BaseCard
               headerContent={
                 <Group justify="space-between" mb="md">
@@ -82,7 +82,7 @@ export default function LatestUpdates() {
           </Grid.Col>
         ))}
 
-        <Grid.Col span={4}>
+        <Grid.Col span={{ base: 12, sm: 6, lg: 4 }}>
           <BaseCard
             headerContent={
               <Group justify="space-between" mb="xs">
