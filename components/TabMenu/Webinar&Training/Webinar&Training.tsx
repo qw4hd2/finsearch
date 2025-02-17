@@ -8,7 +8,7 @@ const VideoPlayer = dynamic(() => import('@/components/VideoPlayer/VideoPlayer')
 export default function Webinar() {
   return (
     <Grid gutter="md" mb="md" mt="lg">
-      <Grid.Col span={7} mb="md" mt="lg">
+      <Grid.Col span={{ base: 12, sm: 6, lg: 7 }} mb="md" mt="lg">
         <Title order={2} mb="md">
           Watch Our Latest Webinar Replay
         </Title>
@@ -25,7 +25,7 @@ export default function Webinar() {
         </Suspense>
       </Grid.Col>
 
-      <Grid.Col span={5} mb="md" mt="lg">
+      <Grid.Col span={{ base: 12, sm: 6, lg: 5 }} mb="md" mt="lg">
         <Title order={2} mb="md">
           Schedule a Training Session
         </Title>
