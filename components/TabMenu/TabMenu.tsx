@@ -28,6 +28,7 @@ export default function TabMenu() {
         <Metrics />
         <TopFirms />
         <LatestUpdates />
+        <ContactHighlights />
         <ResearchNotes />
         <Webinar />
       </Tabs.Panel>
