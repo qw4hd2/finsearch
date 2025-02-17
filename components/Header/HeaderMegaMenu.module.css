@@ -17,11 +17,6 @@
   font-weight: 500;
   font-size: var(--mantine-font-size-sm);
 
-  @media (max-width: $mantine-breakpoint-sm) {
-    height: 42px;
-    width: 100%;
-  }
-
   @mixin hover {
     background-color: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-6));
   }
@@ -44,4 +39,21 @@
   padding: var(--mantine-spacing-md) calc(var(--mantine-spacing-md) * 2);
   padding-bottom: var(--mantine-spacing-xl);
   border-top: 1px solid light-dark(var(--mantine-color-gray-1), var(--mantine-color-dark-5));
+}
+
+@media (min-width: 1024px) and (max-width: 1300px) {
+  .header {
+    padding-left: var(--mantine-spacing-xs);
+    padding-right: var(--mantine-spacing-xs);
+  }
+
+  .link {
+    font-size: var(--mantine-font-size-sm); /* Slightly larger font */
+    padding-left: var(--mantine-spacing-xs);
+    padding-right: var(--mantine-spacing-xs);
+  }
+
+  .subLink {
+    padding: var(--mantine-spacing-sm) var(--mantine-spacing-xs);
+  }
 }
