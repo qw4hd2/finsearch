@@ -46,7 +46,7 @@ export default function TopFirms() {
       <Title order={2} mb="md" mt="lg">
         Top Firms
       </Title>
-      <SimpleGrid cols={3} spacing="lg" mb="md" mt="lg">
+      <SimpleGrid cols={{ base: 1, sm: 2, lg: 3 }} spacing="lg" mb="md" mt="lg">
         {firmsCategories.map((category, index) => (
           <BaseCard
             key={index}
