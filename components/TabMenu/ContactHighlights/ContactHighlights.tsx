@@ -76,7 +76,7 @@ export default function ContactHighlights() {
         Contact Highlights
       </Title>
       <Grid gutter="md">
-        <Grid.Col span={8}>
+        <Grid.Col span={{ base: 12, sm: 8, lg: 8 }}>
           <BaseCard
             headerContent={
               <Group justify="space-between" mb="md">
@@ -87,21 +87,23 @@ export default function ContactHighlights() {
               </Group>
             }
             content={
-              <Table miw={800} verticalSpacing="sm">
-                <Table.Thead>
-                  <Table.Tr>
-                    <Table.Th>User</Table.Th>
-                    <Table.Th>Email</Table.Th>
-                    <Table.Th>Job</Table.Th>
-                  </Table.Tr>
-                </Table.Thead>
-                <Table.Tbody>{rows}</Table.Tbody>
-              </Table>
+              <Table.ScrollContainer minWidth={500}>
+                <Table>
+                  <Table.Thead>
+                    <Table.Tr>
+                      <Table.Th>User</Table.Th>
+                      <Table.Th>Email</Table.Th>
+                      <Table.Th>Job</Table.Th>
+                    </Table.Tr>
+                  </Table.Thead>
+                  <Table.Tbody>{rows}</Table.Tbody>
+                </Table>
+              </Table.ScrollContainer>
             }
           />
         </Grid.Col>
 
-        <Grid.Col span={4}>
+        <Grid.Col span={{ base: 12, sm: 4, lg: 4 }}>
           <BaseCard
             headerContent={
               <>
