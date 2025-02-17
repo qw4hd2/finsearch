@@ -65,13 +65,13 @@ export default function Tabbed() {
 
   return (
     <Grid gutter="md">
-      <Grid.Col span={4}>
+      <Grid.Col span={{ base: 12, sm: 6, lg: 4 }}>
         <TabbedCard title="LATEST NEWS" viewAllLink="/news" tabs={newsTabs} />
       </Grid.Col>
-      <Grid.Col span={4}>
+      <Grid.Col span={{ base: 12, sm: 6, lg: 4 }}>
         <TabbedCard title="TASKS" viewAllLink="/tasks" tabs={tasksTabs} />
       </Grid.Col>
-      <Grid.Col span={4}>
+      <Grid.Col span={{ base: 12, sm: 6, lg: 4 }}>
         <TabbedCard title="FAVOURITES" viewAllLink="/favorites" tabs={favoritesTabs} />
       </Grid.Col>
     </Grid>
