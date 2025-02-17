@@ -56,16 +56,18 @@ export default function ResearchNotes() {
         </Group>
 
         <Stack>
-          <Table miw={800} verticalSpacing="sm">
-            <Table.Thead>
-              <Table.Tr>
-                <Table.Th>Firm</Table.Th>
-                <Table.Th>Date</Table.Th>
-                <Table.Th>Subject Line</Table.Th>
-              </Table.Tr>
-            </Table.Thead>
-            <Table.Tbody>{rows}</Table.Tbody>
-          </Table>
+          <Table.ScrollContainer minWidth={300}>
+            <Table verticalSpacing="sm">
+              <Table.Thead>
+                <Table.Tr>
+                  <Table.Th>Firm</Table.Th>
+                  <Table.Th>Date</Table.Th>
+                  <Table.Th>Subject Line</Table.Th>
+                </Table.Tr>
+              </Table.Thead>
+              <Table.Tbody>{rows}</Table.Tbody>
+            </Table>
+          </Table.ScrollContainer>
         </Stack>
       </Card>
     </div>
